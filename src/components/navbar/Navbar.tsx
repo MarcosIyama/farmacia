@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
       <div className='flex gap-2 pe-2'>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/produtos">Produtos</Link></li>
+        <li><Link to="/produtos/novo">Adicionar Produtos</Link></li>
         <li><Link to="/categorias">Categorias</Link></li>
         <li><Link to="/categorias/nova">Adicionar Categoria</Link></li>
       </div>
