@@ -4,6 +4,8 @@ import Home from './components/home/Home';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import './App.css';
+import ListarCategorias from './components/categorias/ListarCategorias';
+import FormCategoria from './components/categorias/FormCategoria';
 
 const App: React.FC = () => {
   return (
@@ -11,7 +13,8 @@ const App: React.FC = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Adicione outras rotas conforme necessário */}
+        <Route path="/categorias" element={<ListarCategorias />} />
+        <Route path="/categorias/nova" element={<FormCategoria />} />
       </Routes>
       <Footer />
     </Router>
