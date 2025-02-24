@@ -46,7 +46,7 @@ const DeletarProduto: React.FC = () => {
           <p>
             Tem certeza de que deseja excluir o produto <strong>{produto.nome}</strong>?
           </p>
-          <div className="mt-4 flex space-x-4">
+          <div className="mt-4 flex space-x-4 justify-center">
             <button
               onClick={handleDelete}
               className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
