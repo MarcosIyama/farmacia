@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer';
 import './App.css';
 import ListarCategorias from './components/categorias/ListarCategorias';
 import FormCategoria from './components/categorias/FormCategoria';
+import DeleteCategoriaPage from './components/categorias/DeletarCategoria';
 
 const App: React.FC = () => {
   return (
@@ -14,7 +15,9 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/categorias" element={<ListarCategorias />} />
-        <Route path="/categorias/nova" element={<FormCategoria />} />
+        <Route path="/categorias/nova" element={<FormCategoria />} /> 
+        <Route path="/categorias/editar/:id" element={<FormCategoria />} />
+        <Route path="/categorias/deletar/:id" element={<DeleteCategoriaPage />} />
       </Routes>
       <Footer />
     </Router>
