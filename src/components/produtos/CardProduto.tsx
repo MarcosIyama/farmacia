@@ -30,7 +30,7 @@ const CardProduto: React.FC<CardProdutoProps> = ({ produto }) => {
       <p className="text-gray-600 mb-4">
         Categoria: {produto.categoria.nome}
       </p>
-      <div className="flex justify-end space-x-2">
+      <div className="flex justify-center space-x-2">
         <Link to={`/produtos/editar/${produto.id}`}>
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
             Atualizar
